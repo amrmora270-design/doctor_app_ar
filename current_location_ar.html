@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>موقعك الحالي</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .gradient-background {
+            background-image: linear-gradient(to bottom, #470d9d, #907ffc);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#460d9c",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#171022",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col items-center group/design-root overflow-x-hidden gradient-background p-4">
+<h1 class="text-white tracking-light text-[32px] font-bold leading-tight text-center pb-3 pt-6">موقعك الحالي</h1>
+<div class="relative flex w-full max-w-md px-4 py-3 justify-center">
+<div class="relative w-full bg-center bg-no-repeat aspect-[2/1] bg-cover rounded-xl object-cover shadow-lg" data-alt="A stylized map view of a city grid" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPFB9X1P9SE6FqTmvugVd7bPqmWoo2H_URKFmWsDhFFFWyQtgjvlTh9VvHDdrR2bKn_rRIVM-CdLEwtX3OEo-IknOVSePeLp1gfZlvio1qiGaKt0qf2NRtdQ6giP0g7VbXzJjs5P6XOQOMluWlLlhnl_DnEARg4OH-JRoxljGHLxjSFi8OSq-3402ECaJyZCOYIw1icKtprxzQLBs_6XZXVpv89KuDSQGAsZRveSMPCBAmEZgocRlzXSmsAof8Nt3779A7c-6i7QQ");'>
+<div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
+<span class="material-symbols-outlined text-white text-5xl">location_on</span>
+</div>
+</div>
+</div>
+<div class="flex w-full max-w-md px-4 py-3 justify-center">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 flex-1 bg-white text-primary gap-2.5 text-base font-bold leading-normal tracking-[0.015em] shadow-md">
+<span class="material-symbols-outlined text-primary text-2xl">my_location</span>
+<span class="truncate">استخدام موقعي الحالي</span>
+</button>
+</div>
+<div class="flex items-center w-full max-w-md px-4 py-3">
+<div class="flex-grow border-t border-white/50"></div>
+<span class="px-4 text-sm font-medium text-white/80">أو</span>
+<div class="flex-grow border-t border-white/50"></div>
+</div>
+<div class="flex w-full max-w-md flex-col gap-4 px-4 py-3">
+<label class="flex flex-col w-full flex-1">
+<p class="text-white text-base font-medium leading-normal pb-2">المدينة</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#141118] focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 bg-white h-14 placeholder:text-[#716189] px-4 py-3 text-base font-normal leading-normal appearance-none bg-no-repeat" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCU_0iL68y2QrUUBuME-EAAuX31BIahEFiYIWHrIZ7eidnSZOsFdiM2n-0EAX8umG4KC59z_1vx348l7oDljsd9t3X0jEFtA86b4xZbPFilAIYCwzJyXSfI5B7lZldfZTaTGufoaZeF8WEcko7a0dHlbQSLhZsDO20u2PUc_NgOtioIy4jJM_IVz1CD_5hQQQbYtrsEQi8j8NXRCrJVX5FXONoqSAkvAK86YygoQaJmAuwGzRaW6-UCKcBk_CDJRRn7-0sMYN5jiFQ'); background-position: left 1rem center; background-size: 1.5em 1.5em;">
+<option value="one">اختر مدينة</option>
+<option value="two">نيويورك</option>
+<option value="three">لوس أنجلوس</option>
+</select>
+</label>
+<label class="flex flex-col w-full flex-1">
+<p class="text-white text-base font-medium leading-normal pb-2">المنطقة</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#141118] focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 bg-white h-14 placeholder:text-[#716189] px-4 py-3 text-base font-normal leading-normal appearance-none bg-no-repeat" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCU_0iL68y2QrUUBuME-EAAuX31BIahEFiYIWHrIZ7eidnSZOsFdiM2n-0EAX8umG4KC59z_1vx348l7oDljsd9t3X0jEFtA86b4xZbPFilAIYCwzJyXSfI5B7lZldfZTaTGufoaZeF8WEcko7a0dHlbQSLhZsDO20u2PUc_NgOtioIy4jJM_IVz1CD_5hQQQbYtrsEQi8j8NXRCrJVX5FXONoqSAkvAK86YygoQaJmAuwGzRaW6-UCKcBk_CDJRRn7-0sMYN5jiFQ'); background-position: left 1rem center; background-size: 1.5em 1.5em;">
+<option value="one">اختر منطقة</option>
+<option value="two">وسط البلد</option>
+<option value="three">منتصف المدينة</option>
+</select>
+</label>
+</div>
+<div class="w-full max-w-md px-4 py-3">
+<div class="bg-white rounded-xl p-4 shadow-md">
+<h3 class="text-primary text-sm font-bold tracking-wide">موقعك المحدد</h3>
+<div class="flex items-center mt-2 gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">map</span>
+<p class="text-[#141118] text-base font-medium">نيويورك، وسط البلد</p>
+</div>
+</div>
+</div>
+<div class="flex-grow"></div> 
+<div class="flex w-full max-w-md px-4 pt-6 pb-4 justify-center">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 flex-1 bg-primary text-white gap-2.5 text-lg font-bold leading-normal tracking-[0.015em] shadow-lg">
+<span class="truncate">تأكيد الموقع</span>
+</button>
+</div>
+</div>
+</body></html>

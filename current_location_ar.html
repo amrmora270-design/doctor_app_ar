@@ -205,13 +205,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // الانتقال للصفحة الرئيسية
         sessionStorage.setItem("forceLocationReload", "1");
-      // محاولة الرجوع للصفحة السابقة
-if (document.referrer && document.referrer !== window.location.href) {
-    window.location.href = document.referrer;
-} else {
-    // لو مفيش صفحة سابقة (كروم موبايل)
-    window.location.href = "home_ar.html";
-}
+        window.history.back();
+    });
+
+});
 
 </script>
 
